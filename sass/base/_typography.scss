@@ -6,6 +6,7 @@
     backface-visibility: hidden;
     margin-bottom: 1.5rem;
 
+
     &--main {
       display: block;
       font-size: 6rem;
@@ -14,6 +15,10 @@
       animation-name: moveInLeft;
       animation-duration: 1.5s;
       animation-timing-function: ease-out;
+
+      @include respond(phone) { 
+        letter-spacing: 1rem;
+      }
     }
 
     &--sub {
@@ -31,8 +36,6 @@ body {
     /*font-size: 16px;*/
     line-height: 1.7;
     color: $color-grey;
-    padding: 3rem;
-  
     box-sizing: border-box;
   }
 
@@ -46,6 +49,14 @@ body {
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
+
+    @include respond(tab-port) { 
+      font-size: 3rem;
+    }
+
+    @include respond(phone) { 
+      font-size: 2.5rem;
+    }
 
     &:hover {
       transform: skewY(12deg) skewX(10deg) scale(1.1);

@@ -1,4 +1,6 @@
 @import "../abstracts/mixins";
+@import "../abstracts/variables";
+
 
 *, *::after, *::before {
     margin: 0;
@@ -33,4 +35,9 @@
       padding: 0;
     }
 
+  }
+
+  ::selection {
+    background-color: $color-primary;
+    color: $color-white;
   }

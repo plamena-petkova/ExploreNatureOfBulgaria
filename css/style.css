@@ -20,22 +20,26 @@ breakpoint arguments choices:
 /*10/16=0.625 16px browser fontsize we need 10px*/
 html {
   font-size: 62.5%; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     html {
       font-size: 50%; } }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 112.5em) {
+  @media only screen and (max-width: 112.5em) {
     html {
       font-size: 65%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     body {
       padding: 0; } }
+
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
 
 @keyframes moveInLeft {
   0% {
@@ -78,7 +82,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem; } }
   .heading-primary--sub {
@@ -106,10 +110,10 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -131,7 +135,7 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -146,7 +150,7 @@ body {
 
 .u-margin-top-medium {
   margin-top: 4rem; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .u-margin-top-medium {
       margin-bottom: 3rem !important; } }
 
@@ -168,7 +172,7 @@ breakpoint arguments choices:
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .section-about {
       padding: 20rem 0; } }
 
@@ -180,7 +184,7 @@ breakpoint arguments choices:
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .section-features {
       padding: 10rem 0; } }
 
@@ -188,14 +192,14 @@ breakpoint arguments choices:
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .section-places {
       padding: 20rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;
   padding: 8rem 0; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .section-stories {
       padding: 10rem 0; } }
 
@@ -208,20 +212,20 @@ breakpoint arguments choices:
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 65%), url(../../img/stone-bridge-nature-bulgaria-form.jpg);
       background-size: cover; } }
   .book__form {
     width: 50%;
     padding: 6rem; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .book__form {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../../img/stone-bridge-nature-bulgaria-form.jpg); } }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .book__form {
         width: 65%; } }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .book__form {
         width: 100%; } }
 
@@ -306,7 +310,7 @@ breakpoint arguments choices:
     z-index: 10;
     transition: all .2s;
     outline-offset: 2rem; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .composition__photo {
         float: left;
         position: relative;
@@ -315,14 +319,14 @@ breakpoint arguments choices:
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
-      @media (max-width: 56.2rem) {
+      @media only screen and (max-width: 56.2rem) {
         .composition__photo--p1 {
           top: 0;
           transform: scale(1.2); } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
-      @media (max-width: 56.2rem) {
+      @media only screen and (max-width: 56.2rem) {
         .composition__photo--p2 {
           top: -1rem;
           transform: scale(1.3);
@@ -330,7 +334,7 @@ breakpoint arguments choices:
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
-      @media (max-width: 56.2rem) {
+      @media only screen and (max-width: 56.2rem) {
         .composition__photo--p3 {
           top: 1rem;
           left: 0;
@@ -351,7 +355,7 @@ breakpoint arguments choices:
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .feature-box {
       padding: 2rem; } }
   .feature-box__icon {
@@ -361,7 +365,7 @@ breakpoint arguments choices:
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .feature-box__icon {
         margin: 0; } }
   .feature-box:hover {
@@ -449,7 +453,7 @@ breakpoint arguments choices:
     top: 40%;
     left: 50%;
     transform: translate(-50%, 50%); }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem), only screen and (hover: hover) {
     .card {
       height: auto;
       background-color: #fff;
@@ -484,12 +488,12 @@ breakpoint arguments choices:
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .story {
       width: 100%;
       padding: 4rem;
       padding-left: 7rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .story {
       transform: skewX(0); } }
   .story__shape {
@@ -501,7 +505,7 @@ breakpoint arguments choices:
     clip-path: circle(50% at 50% 50%);
     transform: translate(-3rem) skewX(12deg);
     position: relative; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .story__shape {
         transform: translate(-3rem) skewX(0); } }
   .story__img {
@@ -514,7 +518,7 @@ breakpoint arguments choices:
     transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .story__text {
         transform: skewX(0); } }
   .story__caption {
@@ -568,7 +572,7 @@ breakpoint arguments choices:
   width: 90%;
   display: block;
   transform: all .3s; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .form__input {
       width: 100%; } }
   .form__input:focus {
@@ -596,7 +600,7 @@ breakpoint arguments choices:
 .form__radio-group {
   width: 49%;
   display: inline-block; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .form__radio-group {
       width: 100%;
       margin-bottom: 4rem; } }
@@ -664,7 +668,7 @@ breakpoint arguments choices:
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .popup__left {
         display: block;
         width: 100%;
@@ -674,7 +678,7 @@ breakpoint arguments choices:
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .popup__right {
         display: block;
         width: 100%;
@@ -683,7 +687,7 @@ breakpoint arguments choices:
   .popup__img {
     display: block;
     width: 100%; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .popup__img {
         display: inline-block;
         width: 40%;
@@ -701,7 +705,7 @@ breakpoint arguments choices:
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .popup__text {
         column-count: 1;
         padding-right: 2rem; } }
@@ -711,7 +715,7 @@ breakpoint arguments choices:
   .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .popup:target .popup__content {
         transform: translate(-50%, -50%) scale(0.6); } }
   .popup__close:link, .popup__close:visited {
@@ -735,7 +739,7 @@ breakpoint arguments choices:
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
@@ -757,10 +761,10 @@ breakpoint arguments choices:
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .row {
       max-width: 50rem;
       padding: 3rem; } }
@@ -772,11 +776,11 @@ breakpoint arguments choices:
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.2rem) {
+      @media only screen and (max-width: 56.2rem) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -796,13 +800,13 @@ breakpoint arguments choices:
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer {
       padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin: 8rem; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
@@ -812,7 +816,7 @@ breakpoint arguments choices:
     border-top: 1px solid #999;
     padding-top: 2rem;
     display: inline-block; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -838,7 +842,7 @@ breakpoint arguments choices:
     padding-top: 2rem;
     width: 80%;
     float: right; }
-    @media (max-width: 56.2rem) {
+    @media only screen and (max-width: 56.2rem) {
       .footer__copyright {
         width: 100%;
         float: none; } }
@@ -858,11 +862,11 @@ breakpoint arguments choices:
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .navigation__button {
       top: 4.5rem;
       right: 4.5rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__button {
       top: 3.5rem;
       right: 3.5rem; } }
@@ -877,11 +881,11 @@ breakpoint arguments choices:
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: all .8s; }
-  @media (max-width: 56.2rem) {
+  @media only screen and (max-width: 56.2rem) {
     .navigation__background {
       top: 4.7rem;
       right: 4.7rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
